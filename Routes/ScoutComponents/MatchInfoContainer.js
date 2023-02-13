@@ -42,7 +42,6 @@ export default function MatchInfoContainer() {
 							data={["Practice", "Qualification", "Quarterfinal", "Semifinal"]}
 							bgc="orange"
 							segmentedButton
-							forceOption
 							default="Qualification"
 							options={{flexDirection: "row"}}
 						/>
@@ -65,7 +64,7 @@ export default function MatchInfoContainer() {
 						<BoolButton id="StartingPieces" bgc="lime" width={160}>Has Game Piece</BoolButton>
 						<View>
 							<Image
-								source={selectedTeam===1? require("../../Assets/redCargo2022.jpg") : require("../../Assets/blueCargo2022.jpg")}
+								source={selectedTeam===1? require("../../Assets/2022/redCargo2022.jpg") : require("../../Assets/2022/blueCargo2022.jpg")}
 								style={{ width: 150, height: 150 }}
 							/>
 						</View>

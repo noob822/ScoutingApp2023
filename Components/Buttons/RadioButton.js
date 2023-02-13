@@ -8,7 +8,6 @@ import {
 import { setKeyPair, setDefault, selectID } from "../../Redux/Features/dataSlice.js";
 import { useDispatch, useSelector } from "react-redux";
 
-import ScoutingColors from "../../Config/ScoutingColors";
 import { useTheme } from "@react-navigation/native";
 
 export default function RadioButton(props) {
@@ -18,7 +17,9 @@ export default function RadioButton(props) {
 	const BORDER_RADIUS = 10;
 
 	// set default value
-	dispatch(setDefault([props.id, (props.data.findIndex(v => v===props.default)) || 0]));
+	if (props.default) dispatch(setDefault([props.id, (props.data.findIndex(v => v===(props.default)))]));
+	else dispatch(setDefault([props.id, 0]));
+	
 	// get value from store
 	const selectedIndex = useSelector(selectID(props.id));
 	const selectedColor = props.bgc || "orange";

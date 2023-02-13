@@ -17,7 +17,6 @@ import Scout from "./Routes/Scout.js";
 import PastMatches from "./Routes/PastMatches.js";
 import About from "./Routes/About.js";
 import ScoutingColors from "./Config/ScoutingColors";
-import RadioButton from "./Components/Buttons/RadioButton";
 import { selectID, setDefault, setKeyPair } from "./Redux/Features/dataSlice";
 import { useEffect } from "react";
 
@@ -102,7 +101,7 @@ function ThemedApp() {
 	return (
 		<>
 			{/* 
-			<RadioButton id="ThemeSelector" data={["auto", ...Object.keys(themes)]} default={"auto"} bgc="orange" segmentedButton forceOption  options={{flexDirection: "row"}}/>
+			<RadioButton id="ThemeSelector" data={["auto", ...Object.keys(themes)]} default={"auto"} bgc="orange" segmentedButton options={{flexDirection: "row"}}/>
 			*/}
 			<NavigationContainer theme={themes[selectedThemeName]}>
 				<MyTabs />

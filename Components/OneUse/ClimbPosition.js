@@ -9,7 +9,6 @@ import { Text } from "../../Components/Themed/Text";
 
 import { setKeyPair, setDefault, selectID } from "../../Redux/Features/dataSlice.js";
 import { useDispatch, useSelector } from "react-redux";
-import ScoutingColors from "../../Config/ScoutingColors.js";
 import { useTheme } from "@react-navigation/native";
 
 export default function ClimbPosition(props) {
@@ -37,7 +36,7 @@ export default function ClimbPosition(props) {
 			<Text style={{ fontWeight: "bold", fontSize: 20 }}>Climb Position</Text>
 
 			<ImageBackground 
-				source={require("../../Assets/ClimbPosition2022.png")}
+				source={require("../../Assets/2022/ClimbPosition2022.png")}
 				style={{ width: width, height: height }}
 				imageStyle={{ borderRadius: 10 }}
 			>

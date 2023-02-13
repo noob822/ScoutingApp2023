@@ -20,7 +20,7 @@ export default function TeleOp() {
 
 	// set default value
 	dispatch(setDefault([arenaID, 0]));
-
+	/*
 	return (
 		<View style={[styles.container, {backgroundColor: colors.background}]}>
 			<Text style={{ textAlign: "center", fontSize: 35, fontWeight: "bold" }}>Tele-Op</Text>
@@ -67,6 +67,12 @@ export default function TeleOp() {
 				<NumButton id="TeleOpMissed" width={160}>TeleOp Missed</NumButton>
 				
 			</View>
+		</View>
+	);*/
+
+	return (
+		<View>
+			{/* AIDAN!!! do your stuff here */}
 		</View>
 	);
 
