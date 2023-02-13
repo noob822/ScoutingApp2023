@@ -61,6 +61,11 @@ export default function TeleOp() {
 						borderRadius={10}
 					/>
 				</View>
+				
+				<BoolButton id="FedGamePieces" width={160}> Fed Game Pieces</BoolButton>
+				<BoolButton id="WasDefended" width={160}> Was Defended</BoolButton>
+				<NumButton id="TeleOpMissed" width={160}>TeleOp Missed</NumButton>
+				
 			</View>
 		</View>
 	);
